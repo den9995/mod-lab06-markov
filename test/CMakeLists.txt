@@ -8,3 +8,5 @@ target_compile_definitions(${PROJECT_NAME}.test
 
 install(TARGETS ${PROJECT_NAME}.test
         DESTINATION "${tool_dest}")
+#copy txt file to test dir
+file(COPY ${PROJECT_SOURCE_DIR}/test/test.txt DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
